@@ -61,7 +61,8 @@ function Signup() {
                         setUser({userEmail: email, isLoading: false})
                         navigate("/courses")
                     }}
-
+//axios fetch async await virtual dom
+//axios internally send right header
                 > Signup</Button>
             </Card>
         </div>

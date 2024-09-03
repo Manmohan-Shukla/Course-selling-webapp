@@ -5,7 +5,9 @@ import { isUserLoading } from "../store/selectors/isUserLoading";
 import {useSetRecoilState, useRecoilValue} from "recoil";
 import { userState } from "../store/atoms/user.js";
 import { userEmailState } from "../store/selectors/userEmail"
-
+import { Landing } from "./Landing.jsx";
+import Avatar from '@mui/material/Avatar';
+import Chip from '@mui/material/Chip';
 function Appbar({}) {
     const navigate = useNavigate()
     const userLoading = useRecoilValue(isUserLoading);
@@ -26,10 +28,11 @@ function Appbar({}) {
             <div style={{marginLeft: 10, cursor: "pointer"}} onClick={() => {
                 navigate("/")
             }}>
-                <Typography variant={"h6"}>Coursera</Typography>
+                <Typography variant={"h6"}>Hubbash</Typography>
             </div>
     
             <div style={{display: "flex"}}>
+            
                 <div style={{marginRight: 10, display: "flex"}}>
                 <div style={{marginRight: 10}}>
                         <Button
@@ -50,6 +53,7 @@ function Appbar({}) {
                     <Button
                         variant={"contained"}
                         onClick={() => {
+                            
                             localStorage.setItem("token", null);
                             setUser({
                                 isLoading: false,
@@ -70,7 +74,7 @@ function Appbar({}) {
             <div style={{marginLeft: 10, cursor: "pointer"}} onClick={() => {
                 navigate("/")
             }}>
-                <Typography variant={"h6"}>Coursera</Typography>
+                <Typography variant={"h6"}>Hubbash</Typography>
             </div>
     
             <div style={{display: "flex"}}>

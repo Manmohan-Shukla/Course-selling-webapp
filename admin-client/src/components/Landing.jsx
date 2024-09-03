@@ -14,7 +14,7 @@ export const Landing = () => {
             <Grid item xs={12} md={6} lg={6}>
                 <div style={{marginTop: 100}}>
                     <Typography variant={"h2"}>
-                        Coursera Admin
+                        Hubbash Admin
                     </Typography>
                     <Typography variant={"h5"}>
                         A place to learn, earn and grow
@@ -44,7 +44,7 @@ export const Landing = () => {
                 </div>
             </Grid>
             <Grid item xs={12} md={6} lg={6}  style={{marginTop: 20}}>
-                <img src={"/class.jpeg"} width={"100%"} />
+                <img src={"/fotor-ai-20240818185215.jpg"} width={"100%"} />
             </Grid>
         </Grid>
     </div>

@@ -16,7 +16,7 @@ const authenticateJwt = (req, res, next) => {
     res.sendStatus(401);
   }
 };
-
+//diff b/w api and middleware 
 module.exports = {
     authenticateJwt,
     SECRET

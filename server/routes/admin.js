@@ -6,7 +6,7 @@ const { SECRET } = require("../middleware/auth")
 const { authenticateJwt } = require("../middleware/auth");
 
 const router = express.Router();
-
+// router ??
 router.get("/me", authenticateJwt, async (req, res) => {
     const admin = await Admin.findOne({ username: req.user.username });
     if (!admin) {
@@ -28,7 +28,7 @@ router.post('/signup', (req, res) => {
         const newAdmin = new Admin(obj);
         newAdmin.save();
 
-        const token = jwt.sign({ username, role: 'admin' }, SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ username, role: 'admin' }, SECRET, { expiresIn: '1h' });//generate jwt
         res.json({ message: 'Admin created successfully', token });
       }
   
