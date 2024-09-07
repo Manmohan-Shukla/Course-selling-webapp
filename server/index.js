@@ -6,14 +6,7 @@ const userRouter = require("./routes/user");
 
 const app = express();
 
-app.use(cors(
-    {
-        origin:[""],
-        methods:["POST","GET","PUT"],
-        credentials:true
-
-    }
-));
+app.use(cors());
 app.use(express.json());
 
 app.use("/admin", adminRouter)
