@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:["https://course-selling-webapp-seven.vercel.app/"],
+        origin:[""],
         methods:["POST","GET","PUT"],
         credentials:true
 
