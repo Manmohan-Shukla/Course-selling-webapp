@@ -6,7 +6,14 @@ const userRouter = require("./routes/user");
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://course-selling-webapp-seven.vercel.app/"],
+        methods:["POST","GET","PUT"],
+        credentials:true
+
+    }
+));
 app.use(express.json());
 
 app.use("/admin", adminRouter)
